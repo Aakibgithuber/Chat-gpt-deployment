@@ -43,7 +43,10 @@ data "aws_subnet" "subnet" {
 
 # Filter subnets by supported availability zones
 locals {
-  supported_subnets = [for subnet in data.aws_subnet.subnet : subnet.id if subnet.availability_zone in ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d", "us-east-1f"]]
+  supported_subnets = [
+    for subnet in data.aws_subnet.subnet : subnet.id 
+    if contains(["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d", "us-east-1f"], subnet.availability_zone)
+  ]
 }
 
 # EKS Cluster
