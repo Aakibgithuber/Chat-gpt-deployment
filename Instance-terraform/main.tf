@@ -35,7 +35,7 @@ resource "aws_instance" "web" {
   instance_type          = "t2.large"
   key_name               = "my key"
   vpc_security_group_ids = [aws_security_group.Jenkins-sg.id]
-  user_data              = templatefile("./install_jenkins.sh", {})
+  user_data              = templatefile("./script.sh", {})
 
   tags = {
     Name = "gpt clone"
