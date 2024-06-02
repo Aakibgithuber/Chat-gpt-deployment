@@ -14,7 +14,7 @@ import { Conversations } from './Conversations';
 interface Props {
   loading: boolean;
   conversations: Conversation[];
-  lightMode: 'light' | 'dark';
+  lightMode: 'light' | 'green';
   selectedConversation: Conversation;
   apiKey: string;
   pluginKeys: PluginKey[];
