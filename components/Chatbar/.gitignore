@@ -1,0 +1,6 @@
+Instance-terraform/.terraform.lock.hcl
+Instance-terraform/.terraform/
+Instance-terraform/terraform.tfstate
+Instance-terraform/terraform.tfstate.backup
+k8s/prometheus-2.47.1.linux-amd64.tar.gz
+k8s/prometheus-2.47.1.linux-amd64/
