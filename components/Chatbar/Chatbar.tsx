@@ -23,7 +23,7 @@ interface Props {
   onDeleteFolder: (folderId: string) => void;
   onUpdateFolder: (folderId: string, name: string) => void;
   onNewConversation: () => void;
-  onToggleLightMode: (mode: 'light' | 'dark') => void;
+  onToggleLightMode: (mode: 'light' | 'green') => void;
   onSelectConversation: (conversation: Conversation) => void;
   onDeleteConversation: (conversation: Conversation) => void;
   onUpdateConversation: (
