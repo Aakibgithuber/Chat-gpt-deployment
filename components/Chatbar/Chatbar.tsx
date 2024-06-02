@@ -14,7 +14,7 @@ import { Conversations } from './Conversations';
 interface Props {
   loading: boolean;
   conversations: Conversation[];
-  lightMode: 'light' | 'dark';
+  lightMode: 'light' | 'green';
   selectedConversation: Conversation;
   apiKey: string;
   pluginKeys: PluginKey[];
@@ -23,7 +23,7 @@ interface Props {
   onDeleteFolder: (folderId: string) => void;
   onUpdateFolder: (folderId: string, name: string) => void;
   onNewConversation: () => void;
-  onToggleLightMode: (mode: 'light' | 'dark') => void;
+  onToggleLightMode: (mode: 'light' | 'green') => void;
   onSelectConversation: (conversation: Conversation) => void;
   onDeleteConversation: (conversation: Conversation) => void;
   onUpdateConversation: (
